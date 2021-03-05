@@ -11,14 +11,87 @@
 <body>
 
     <div class="container">
+        <!-- Header -->
         <header>
+            <h1>Create Your Burger</h1>
         </header>
+        <!-- /Header -->
 
+        <!-- Main -->
         <main>
-        </main>
+            <!-- Custom burger -->
+            <div class="custom">
+                <input id="custom-name" type="text" placeholder="Insert a name">
+            </div>
+            <!-- /Custom burger -->
 
+            <!-- Ingredients section -->
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>
+                        <label for="cheese"> Cheese
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="tomato"> Tomato
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="egg"> Egg
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="lettuce"> Lettuce
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="mustard"> Mustard
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ketchup"> Ketchup
+                            <input type="checkbox">
+                            Add
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Ingredients section -->
+
+            <!-- Coupon section -->
+            <div class="coupon">
+                <p>Discount Coupon</p>
+                <input type="text" placeholder="12345ABCDE">
+            </div>
+            <!-- /Coupon section -->
+
+            <!-- Calculate section -->
+            <div class="calculate">
+                <button class="btn-calculate">
+                    calculate
+                </button>
+            </div>
+            <!-- /Calculate section -->
+        </main>
+        <!-- /Main -->
+
+        <!-- Footer -->
         <footer>
+            <h4>Your Price</h3>
+            <h3>50$</h4>
         </footer>
+        <!-- /Footer -->
     </div>
 
     <script src="js/script.js"></script>
