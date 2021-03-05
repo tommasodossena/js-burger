@@ -21,47 +21,47 @@
         <main>
             <!-- Custom burger -->
             <div class="custom">
-                <input id="custom-name" type="text" placeholder="Insert a name">
+                <input id="burger-input" type="text" placeholder="Name Your Burger">
             </div>
             <!-- /Custom burger -->
 
             <!-- Ingredients section -->
-            <div class="ingredients">
+            <div class="ingredients-list">
                 <h2>Ingredients</h2>
                 <ul>
                     <li>
                         <label for="cheese"> Cheese
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="3">
                             Add
                         </label>
                     </li>
                     <li>
                         <label for="tomato"> Tomato
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="4">
                             Add
                         </label>
                     </li>
                     <li>
                         <label for="egg"> Egg
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="2">
                             Add
                         </label>
                     </li>
                     <li>
                         <label for="lettuce"> Lettuce
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="4">
                             Add
                         </label>
                     </li>
                     <li>
                         <label for="mustard"> Mustard
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="1">
                             Add
                         </label>
                     </li>
                     <li>
                         <label for="ketchup"> Ketchup
-                            <input type="checkbox">
+                            <input class="ingredients" type="checkbox" value="1">
                             Add
                         </label>
                     </li>
@@ -72,13 +72,13 @@
             <!-- Coupon section -->
             <div class="coupon">
                 <p>Discount Coupon</p>
-                <input type="text" placeholder="12345ABCDE">
+                <input id="coupon-input" type="text" placeholder="12345ABCDE">
             </div>
             <!-- /Coupon section -->
 
             <!-- Calculate section -->
             <div class="calculate">
-                <button class="btn-calculate">
+                <button id="btn-calculate">
                     calculate
                 </button>
             </div>
@@ -89,7 +89,7 @@
         <!-- Footer -->
         <footer>
             <h4>Your Price</h3>
-            <h3>50$</h4>
+            <h3 id="subtotal">$ 50</h4>
         </footer>
         <!-- /Footer -->
     </div>
