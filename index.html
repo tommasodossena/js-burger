@@ -4,95 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <title>HamburgerOne | Create your Burger</title>
 </head>
 <body>
-
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Create Your Burger</h1>
-        </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Header top -->
+            <div class="header_top">
+                <div class="header_top_logo">
+                    <div class="round_logo">
+                        <img src="img/icons8-beef-burger.svg" alt="BurgerOne logo">
+                    </div>
+                    <h2>BurgerOne</h2>
+                </div>
+                <div class="header_top_navbar">
+                    <nav>
+                        <ul>
+                            <li><a class="navbar_active" href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">More <i class="fas fa-caret-down"></i></a></li>
+                            <li><button class="btn btn-checkout"><i class="fas fa-shopping-basket fa-lg"></i></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Header top -->
+            <!-- Header hero -->
+            <div class="header_hero">
+                <div class="header_hero_cta">
+                    <h1>Create your Burger and enjoy your meal</h1>
+                    <button class="btn btn-explore">Explore ingredients &#8594;</button>
+                </div>
+                <div class="header_hero_img">
+                    <img src="img/burger-10956.png" alt="Huge burger">
+                </div>
+            </div>
+            <!-- /Header hero -->
+        </div>
+    </header>
         <!-- /Header -->
 
-        <!-- Main -->
-        <main>
-            <!-- Custom burger -->
-            <div class="custom">
-                <input id="burger-input" type="text" placeholder="Name Your Burger">
-            </div>
-            <!-- /Custom burger -->
+    <!-- Main -->
+    <main>
+        <!-- Custom burger -->
+        <div class="custom">
+            <input id="burger-input" type="text" placeholder="Name Your Burger">
+        </div>
+        <!-- /Custom burger -->
 
-            <!-- Ingredients section -->
-            <div class="ingredients-list">
-                <h2>Ingredients</h2>
-                <ul>
-                    <li>
-                        <label for="cheese"> Cheese
-                            <input class="ingredients" type="checkbox" value="3">
-                            Add
-                        </label>
-                    </li>
-                    <li>
-                        <label for="tomato"> Tomato
-                            <input class="ingredients" type="checkbox" value="4">
-                            Add
-                        </label>
-                    </li>
-                    <li>
-                        <label for="egg"> Egg
-                            <input class="ingredients" type="checkbox" value="2">
-                            Add
-                        </label>
-                    </li>
-                    <li>
-                        <label for="lettuce"> Lettuce
-                            <input class="ingredients" type="checkbox" value="4">
-                            Add
-                        </label>
-                    </li>
-                    <li>
-                        <label for="mustard"> Mustard
-                            <input class="ingredients" type="checkbox" value="1">
-                            Add
-                        </label>
-                    </li>
-                    <li>
-                        <label for="ketchup"> Ketchup
-                            <input class="ingredients" type="checkbox" value="1">
-                            Add
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <!-- /Ingredients section -->
+        <!-- Ingredients section -->
+        <div class="ingredients-list">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label for="cheese"> Cheese
+                        <input class="ingredients" type="checkbox" value="3">
+                        Add
+                    </label>
+                </li>
+                <li>
+                    <label for="tomato"> Tomato
+                        <input class="ingredients" type="checkbox" value="4">
+                        Add
+                    </label>
+                </li>
+                <li>
+                    <label for="egg"> Egg
+                        <input class="ingredients" type="checkbox" value="2">
+                        Add
+                    </label>
+                </li>
+                <li>
+                    <label for="lettuce"> Lettuce
+                        <input class="ingredients" type="checkbox" value="4">
+                        Add
+                    </label>
+                </li>
+                <li>
+                    <label for="mustard"> Mustard
+                        <input class="ingredients" type="checkbox" value="1">
+                        Add
+                    </label>
+                </li>
+                <li>
+                    <label for="ketchup"> Ketchup
+                        <input class="ingredients" type="checkbox" value="1">
+                        Add
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <!-- /Ingredients section -->
 
-            <!-- Coupon section -->
-            <div class="coupon">
-                <p>Discount Coupon</p>
-                <input id="coupon-input" type="text" placeholder="12345ABCDE">
-            </div>
-            <!-- /Coupon section -->
+        <!-- Coupon section -->
+        <div class="coupon">
+            <p>Discount Coupon</p>
+            <input id="coupon-input" type="text" placeholder="12345ABCDE">
+        </div>
+        <!-- /Coupon section -->
 
-            <!-- Calculate section -->
-            <div class="calculate">
-                <button id="btn-calculate">
-                    calculate
-                </button>
-            </div>
-            <!-- /Calculate section -->
-        </main>
-        <!-- /Main -->
+        <!-- Calculate section -->
+        <div class="calculate">
+            <button id="btn-calculate">
+                calculate
+            </button>
+        </div>
+        <!-- /Calculate section -->
+    </main>
+    <!-- /Main -->
 
-        <!-- Footer -->
-        <footer>
-            <h4>Your Price</h3>
-            <h3 id="subtotal">$ 50</h4>
-        </footer>
-        <!-- /Footer -->
-    </div>
+    <!-- Footer -->
+    <footer>
+        <h4>Your Price</h3>
+        <h3 id="subtotal">$ 50</h4>
+    </footer>
+    <!-- /Footer -->
 
     <script src="js/script.js"></script>
 
