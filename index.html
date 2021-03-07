@@ -82,7 +82,7 @@
                                 <p>Cheese</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$3</p>
                                 <input class="ingredients" type="checkbox" value="3">
                             </div>
                         </label>
@@ -96,7 +96,7 @@
                                 <p>Tomato</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$4</p>
                                 <input class="ingredients" type="checkbox" value="4">
                             </div>
                         </label>
@@ -110,7 +110,7 @@
                                 <p>Egg</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$2</p>
                                 <input class="ingredients" type="checkbox" value="2">
                             </div>
                         </label>
@@ -124,7 +124,7 @@
                                 <p>Lettuce</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$4</p>
                                 <input class="ingredients" type="checkbox" value="4">
                             </div>
                         </label>
@@ -138,7 +138,7 @@
                                 <p>Onion</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$1</p>
                                 <input class="ingredients" type="checkbox" value="1">
                             </div>
                         </label>
@@ -152,7 +152,7 @@
                                 <p>Bacon</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$2</p>
                                 <input class="ingredients" type="checkbox" value="2">
                             </div>
                         </label>
@@ -166,7 +166,7 @@
                                 <p>Avocado</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$4</p>
                                 <input class="ingredients" type="checkbox" value="4">
                             </div>
                         </label>
@@ -180,7 +180,7 @@
                                 <p>Potatoes</p>
                             </div>
                             <div class="label_right">
-                                <p>Add</p>
+                                <p>$3</p>
                                 <input class="ingredients" type="checkbox" value="3">
                             </div>
                         </label>
@@ -191,15 +191,16 @@
 
             <!-- Total section -->
             <div class="total">
-                <div class="coupon">
-                    <input id="coupon-input" type="text" placeholder="12345ABCDE">
+                <div class="total_coupon">
+                    <input id="coupon-input" type="text" placeholder="Have a coupon code? Insert it here!">
                     <button id="btn-calculate">
-                    <p>Calculate</p>
+                        <p>Calculate</p>
                     </button>
                 </div>
-                <div class="calculate">
-                    <h4>Subtotal:</h4>
-                    <h3 id="subtotal">$50</h3>
+                <div class="total_price">
+                    <h3>
+                        Subtotal: <span id="subtotal">$50</span>
+                    </h3>
                 </div>
             </div>
             <!-- /Total section -->
@@ -209,6 +210,12 @@
 
     <!-- Footer -->
     <footer>
+        <div class="copyright">
+            <small>&#x000A9; 2020 - 2021 BurgerOne.sample.com - All Rights Reserved.</small>
+        </div>
+        <div class="payment-method">
+            <img src="img/payment-method.png" alt="Payment method">
+        </div>
     </footer>
     <!-- /Footer -->
 

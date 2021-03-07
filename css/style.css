@@ -26,6 +26,10 @@ h1 {
     font-size: 3.5rem;
     line-height: 1.1;
 }
+small {
+    font-size: 0.5rem;
+    color: #9a9a9a;
+}
 
 /* BUTTONS */
 .btn {
@@ -34,6 +38,10 @@ h1 {
     padding: 20px;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover {
+    background-color: #ffcf5e;
 }
 .btn-explore {
     padding: 20px 65px; 
@@ -141,13 +149,13 @@ header {
     flex-basis: 60%;
 }
 .header_hero_img img {
-    width: 110%;
+    width: 95%;
     margin-left: 50px;
 }
 
 /* MAIN */
 main {
-    padding: 40px 0;
+    padding: 40px 25px;
     text-align: center;
 }
 main .container > div {
@@ -167,26 +175,26 @@ main input[type=text] {
 }
 .ingredients ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .ingredients ul li {
     flex-basis: calc(100% / 4);
+    padding: 10px;
 }
 .ingredients label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 25px);
     height: 100px;
-    margin: 10px 25px;
     background-color: #FEF7E5;
     border-radius: 10px;
     padding: 0 15px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 .label_left > *, .label_right > * {
     display: inline-block;
+    vertical-align: middle;
 }
 .label_left_box {
     height: 75px;
@@ -200,15 +208,18 @@ main input[type=text] {
     height: 35px;
     vertical-align: middle;
 }
+.ingredients input[type=checkbox] {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
 .total {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.coupon {
-
-}
-.calculate {
+.total_price {
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
@@ -220,9 +231,18 @@ main input[type=text] {
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 10vh;
+    padding: 0 50px;
+    margin-top: 15px;
     background-color: #F9F9F9;
 }
+.payment-method img {
+    width: 225px;
+}
+
 
 /* RESPONSIVNESS */
 @media screen and (max-width: 992px) {
@@ -244,5 +264,37 @@ footer {
     }
     .header_hero_img img {
         width: 60%;
+    }
+    .ingredients ul li {
+        flex-basis: calc(100% / 2);
+        padding: 10px 25px;
+    }
+}
+@media screen and (max-width: 667px) {
+    h1 {
+        font-size: 32px;
+    }
+    main input[type=text] {
+        width: 260px;
+    }
+    .label_left p {
+        display: none;
+    }
+    .total {
+        display: inline-block;
+    }
+    .total_coupon input {
+        margin-bottom: 15px;
+    }
+    .total_price {
+        margin-top: 15px;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+    .payment-method img {
+        width: 180px;
+        margin-top: 10px;
     }
 }
