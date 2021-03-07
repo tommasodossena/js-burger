@@ -27,7 +27,7 @@ calcButton.addEventListener("click",
             }
 
             // 5 - Stampo a schermo il prezzo del panino
-            subtotal.innerHTML = "$ " + sum;
+            subtotal.innerHTML = "$" + sum;
 
         } else {
             alert ("Name your Burger!")

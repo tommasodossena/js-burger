@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <title>HamburgerOne | Create your Burger</title>
+    <title>BurgerOne | Create your Burger</title>
 </head>
 <body>
     <!-- Header -->
@@ -37,6 +37,9 @@
                             <li><a href="#">More <i class="fas fa-caret-down"></i></a></li>
                             <li><button class="btn btn-checkout"><i class="fas fa-shopping-basket fa-lg"></i></button></li>
                         </ul>
+                        <div class="hamburger-menu hidden">
+                            <a href=""><i class="fas fa-bars"></i></a>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -45,7 +48,7 @@
             <div class="header_hero">
                 <div class="header_hero_cta">
                     <h1>Create your Burger and enjoy your meal</h1>
-                    <button class="btn btn-explore">Explore ingredients &#8594;</button>
+                    <a href="#create-section"><button class="btn btn-explore" href="lets-create">Explore ingredients <i class="fas fa-arrow-down fa-xs"></i></button></a>
                 </div>
                 <div class="header_hero_img">
                     <img src="img/burger-10956.png" alt="Huge burger">
@@ -58,77 +61,154 @@
 
     <!-- Main -->
     <main>
-        <!-- Custom burger -->
-        <div class="custom">
-            <input id="burger-input" type="text" placeholder="Name Your Burger">
-        </div>
-        <!-- /Custom burger -->
+        <div id="create-section" class="container">
+            <!-- Custom burger -->
+            <div class="custom">
+                <h2>1.Name your Burger</h2>
+                <input id="burger-input" type="text" placeholder="Full Stack Burger">
+            </div>
+            <!-- /Custom burger -->
 
-        <!-- Ingredients section -->
-        <div class="ingredients-list">
-            <h2>Ingredients</h2>
-            <ul>
-                <li>
-                    <label for="cheese"> Cheese
-                        <input class="ingredients" type="checkbox" value="3">
-                        Add
-                    </label>
-                </li>
-                <li>
-                    <label for="tomato"> Tomato
-                        <input class="ingredients" type="checkbox" value="4">
-                        Add
-                    </label>
-                </li>
-                <li>
-                    <label for="egg"> Egg
-                        <input class="ingredients" type="checkbox" value="2">
-                        Add
-                    </label>
-                </li>
-                <li>
-                    <label for="lettuce"> Lettuce
-                        <input class="ingredients" type="checkbox" value="4">
-                        Add
-                    </label>
-                </li>
-                <li>
-                    <label for="mustard"> Mustard
-                        <input class="ingredients" type="checkbox" value="1">
-                        Add
-                    </label>
-                </li>
-                <li>
-                    <label for="ketchup"> Ketchup
-                        <input class="ingredients" type="checkbox" value="1">
-                        Add
-                    </label>
-                </li>
-            </ul>
-        </div>
-        <!-- /Ingredients section -->
+            <!-- Ingredients section -->
+            <div class="ingredients">
+                <h2>2.Choose your Ingredients</h2>
+                <ul>
+                    <li>
+                        <label for="cheese"> 
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/cheese.png" alt="cheese">
+                                </div>
+                                <p>Cheese</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="3">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="tomato"> 
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/tomato.png" alt="Tomato">
+                                </div>
+                                <p>Tomato</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="4">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="egg">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/egg.png" alt="Egg">
+                                </div>
+                                <p>Egg</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="2">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="lettuce">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/lettuce.png" alt="Lettuce">
+                                </div>
+                                <p>Lettuce</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="4">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="onion">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/onion.png" alt="Onion">
+                                </div>
+                                <p>Onion</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="1">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="bacon">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/bacon.png" alt="Bacon">
+                                </div>
+                                <p>Bacon</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="2">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="avocado">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/avocado.png" alt="Avocado">
+                                </div>
+                                <p>Avocado</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="4">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="potatoes">
+                            <div class="label_left">
+                                <div class="label_left_box">
+                                    <img src="img/roasted-sweet-potato.png" alt="Roasted sweet potatoes">
+                                </div>
+                                <p>Potatoes</p>
+                            </div>
+                            <div class="label_right">
+                                <p>Add</p>
+                                <input class="ingredients" type="checkbox" value="3">
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Ingredients section -->
 
-        <!-- Coupon section -->
-        <div class="coupon">
-            <p>Discount Coupon</p>
-            <input id="coupon-input" type="text" placeholder="12345ABCDE">
+            <!-- Total section -->
+            <div class="total">
+                <div class="coupon">
+                    <input id="coupon-input" type="text" placeholder="12345ABCDE">
+                    <button id="btn-calculate">
+                    <p>Calculate</p>
+                    </button>
+                </div>
+                <div class="calculate">
+                    <h4>Subtotal:</h4>
+                    <h3 id="subtotal">$50</h3>
+                </div>
+            </div>
+            <!-- /Total section -->
         </div>
-        <!-- /Coupon section -->
-
-        <!-- Calculate section -->
-        <div class="calculate">
-            <button id="btn-calculate">
-                calculate
-            </button>
-        </div>
-        <!-- /Calculate section -->
     </main>
     <!-- /Main -->
 
     <!-- Footer -->
     <footer>
-        <h4>Your Price</h3>
-        <h3 id="subtotal">$ 50</h4>
     </footer>
     <!-- /Footer -->
 
